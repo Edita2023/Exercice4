@@ -10,5 +10,60 @@
     
     <h1>Réservation</h1>
 
+    <hr>
+
+    <fieldset>
+        <legend>Réservation</legend>
+        <form action="envoi.php" method="post">
+      
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" required>
+
+           
+            <label for="Prénom">Prénom:</label>
+            <input type="text" name="Prénom" placeholder="Prénom">
+
+
+            <label for="maii">Email:</label>
+            <input type="email" name="mail">
+
+            <label for="tel">Téléphone:</label>
+            <input type="tel" name="tel" maxlength="10" pattern="[0-9] {10}"> 
+          
+
+            <label for="Naissance">Date de réservation:</label>
+            <input type="date" name="date" size="22">
+            
+
+
+            <label for="heure">Horaire de réservation: </label>
+            <input type="time" name="heure">
+
+            <section>
+                <label for="MDP">Mot de passe: </label>
+                <input type="password" name="MDP">
+
+            </section>
+
+            <label> c'est pour ?: </label>
+
+            <label for="fr">Entreprise</label>
+            <input type="checkbox" name="ent">
+
+            <label for="Tn">Evenements</label>
+            <input type="checkbox" name="evnt" >
+
+            <label for="Jap">Réservation normal</label>
+            <input type="checkbox" name="norm" checked>
+
+            <textarea name="" id="" cols="50" rows="11" placeholder="Commentaire" maxlength="75"></textarea>
+            <br><br>
+
+            <input type="reset" value="Effacer">
+            <input type="submit" value="Valider">
+
+        </form>
+    </fieldset>
+  
 </body>
 </html>
